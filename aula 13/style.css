@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(43, 94, 43);
+}
+h1{
+    .sedan-regular {
+font-family: "Sedan", serif;
+font-weight: 400;
+font-style: normal;}
+text-align: center;
+}
+h2{
+.sedan-regular {
+font-family: "Sedan", serif;
+font-weight: 400;
+font-style: normal;
+}
+text-align: center;
+}
+main{
+    background-color: white;
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 30px;
+}
+p{
+.lora-regular{
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
