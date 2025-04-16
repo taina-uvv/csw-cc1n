@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(43, 94, 43);
+    background-image: url("./Imagens/Flamengo.webp");
 }
 h1{
     .sedan-regular {
@@ -9,22 +9,13 @@ font-style: normal;}
 text-align: center;
 }
 h2{
-.sedan-regular {
-font-family: "Sedan", serif;
-font-weight: 400;
-font-style: normal;
-}
-text-align: center;
-}
-main{
-    background-color: white;
-    width: 40%;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15px;
-    padding: 30px;
+    .open-sans-uniquifier {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+      }
+      text-align: center;
 }
 p{
 .lora-regular{
@@ -32,4 +23,12 @@ p{
     font-weight: 400;
     font-style: normal;
   }
+}
+main{
+    background-color: white;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    background-image: linear-gradient(90deg,#EB1F3F,#99CF75,#D13446 );
 }
