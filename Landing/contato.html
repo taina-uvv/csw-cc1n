@@ -6,10 +6,27 @@
     <title>Contato</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./Imagens/favicon-telefone.png" type="image/x-icon">
+    <style>
+        label{
+            color: white;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            background-color:  rgb(200, 137, 255);
+            width: 50%; 
+            border-radius: 15px;
+            padding: 15px;
+            position: relative;
+            left: 25%;
+        }
+
+    </style>
 </head>
 <body>
+    
     <h1>Contato</h1>
-    <table border="1" style="background-color: white; position: absolute; left: 80%; top: 3%;">
+    <table border="1" style="background-color: white; position: absolute; left: 80%; top: 4%;">
         <tbody>
             <tr>
                 <th>
@@ -27,5 +44,76 @@
             </tr>
         </tbody>
     </table>
+
+    <h2 style="position: absolute; left: 40%; top: 7%;">Formulário de contato</h2><br>
+    <main>
+        <form action="/enviar" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </form>
+        <br>
+        <form action="/enviar" method="post">
+            <label for="nome">Sobrenome:</label>
+            <input type="text" name="nome" id="nome">
+        </form>
+        <br>
+        <form action="/enviar" method="post">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999">
+        </form>
+        <br>
+        <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+    <br>
+    <br>
+    <label>Tipo de documento:</label>
+<input type="radio" id="tipoCPF" name="tipoDoc" value="cpf" checked>
+<label for="tipoCPF">CPF</label>
+
+<input type="radio" id="tipoCNPJ" name="tipoDoc" value="cnpj">
+<label for="tipoCNPJ">CNPJ</label><br><br>
+
+<label for="documento">Documento:</label><br>
+<input type="text" id="documento" name="documento" placeholder="Digite o CPF ou CNPJ">
+<br> <br>
+<label for="horario">Melhor horário para contato:</label><br>
+    <select type="time" id="horario" name="horario">
+    <option value="">Selecione um horário</option>
+      <option value="08:00">08:00</option>
+      <option value="09:00">09:00</option>
+      <option value="10:00">10:00</option>
+      <option value="11:00">11:00</option>
+      <option value="13:00">13:00</option>
+      <option value="14:00">14:00</option>
+      <option value="15:00">15:00</option>
+    </select>
+    <br>
+    <br>
+    <label>Serviço desejado:</label><br>
+    <input type="checkbox" id="estática" name="serviços" value="estática">
+    <label for="estática">Página estática</label><br>
+
+    <input type="checkbox" id="dinâmica" name="serviços" value="dinâmica">
+    <label for="dinâmica">Página dinâmica</label><br>
+
+    <input type="checkbox" id="avançada" name="serviços" value="avançada">
+    <label for="avançada">Página super avançada</label><br><br>
+
+    <label for="quantidade">Quantidade de páginas:</label><br>
+    <select id="quantidade" name="quantidade">
+    <option value="">Selecione um quantidade</option>
+      <option value="1-2">1-2 páginas</option>
+      <option value="3-5">3-5 páginas</option>
+      <option value="+5">+5 páginas</option>
+    </select><br><br>
+    <form action="/enviar" method="post" style="position: absolute; left: 50%; top: 3%;">
+    <label for="descricao">Descrição do serviço a ser contratado:</label><br>
+<textarea id="descricao" name="descricao" rows="6" cols="40" placeholder="Escreva aqui..."></textarea><br><br>
+</form>
+
+    <!-- Botão de envio -->
+    <input type="submit" value="Enviar">
+  </form>
+</main>
 </body>
 </html>
