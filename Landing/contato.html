@@ -13,8 +13,9 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         main{
-            background-color:  rgb(200, 137, 255);
+            background-color:rgb(200, 137, 255);
             width: 50%; 
+            border: 2px solid white;
             border-radius: 15px;
             padding: 15px;
             position: relative;
@@ -26,18 +27,21 @@
 <body>
     
     <h1>Contato</h1>
-    <table border="1" style="background-color: white; position: absolute; left: 80%; top: 4%;">
+    <table>
         <tbody>
             <tr>
                 <th>
                     <a href="./home.html" target="_self" rel="next">Home</a>
                 </th>
+                <th style="color: white;"> | </th>
                 <th>
                     <a href="./curriculo.html" target="_self" rel="next">Currículo</a>
                 </th>
+                <th style="color: white;"> | </th>
                 <th>
                     <a href="https://github.com/taina-uvv" target="_blank">GitHub</a>
                 </th>
+                <th style="color: white;"> | </th>
                 <th>
                     <a href="./serviços.html" target="_self" rel="next">Serviços</a>
                 </th>
@@ -111,7 +115,6 @@
 <textarea id="descricao" name="descricao" rows="6" cols="40" placeholder="Escreva aqui..."></textarea><br><br>
 </form>
 
-    <!-- Botão de envio -->
     <input type="submit" value="Enviar">
   </form>
 </main>

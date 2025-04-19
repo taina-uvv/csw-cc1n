@@ -38,4 +38,33 @@ h3{
     flex-wrap: wrap;
     gap: 1rem;
   }
-    
+  a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  table{
+    background-color: rgb(200, 137, 255);
+    position: absolute; 
+    left: 76%;
+    top: 4%;
+    border: 2px solid white  ;
+  }
+  a:hover {
+    color: #007bff;
+  }
+.image-com-borda{
+    border: 3px solid white;
+}
+.video-youtube iframe{
+    border: 2px solid white;
+}
+.foto-curriculo{
+    position: absolute;
+    left: 72%;
+    top: 47%;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: white;
+}
