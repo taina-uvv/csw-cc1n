@@ -12,6 +12,7 @@ h2{
 }
 body{
     background-color: rgb(111, 111, 189);
+    font-size: 16px;
 }
 p{
     color: white;
@@ -23,41 +24,36 @@ li{
 h3{
     color: white;
 }
-.form-box{
-    max-width: 600px;
-    margin: 0 auto;
-}
-@media (max-width: 768px) {
-    .form-box {
-      padding: 1rem;
-      font-size: 16px;
-    }
-  }
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
   a{
     color: white;
     text-decoration: none;
     font-weight: bold;
   }
-  table{
+  .links{
     background-color: rgb(200, 137, 255);
-    position: absolute; 
-    left: 76%;
-    top: 4%;
     border: 2px solid white  ;
+    position: absolute;
+    top: 4%;
+    left: 77%;
+    display: flex;
+    flex-wrap: wrap;
   }
   a:hover {
     color: #007bff;
   }
 .image-com-borda{
     border: 3px solid white;
+    max-width: 100%;
+    height: auto;
+    position: absolute; 
+    left: 77%; 
+    top: 25%; 
+    border-radius: 10%;
+    width:20%
 }
 .video-youtube iframe{
     border: 2px solid white;
+    max-width: 100%;
 }
 .foto-curriculo{
     position: absolute;
@@ -67,4 +63,74 @@ h3{
     border-radius: 10px;
     padding: 3px;
     background-color: white;
+    width: 20%;
 }
+.container{
+    background-color: rgb(200, 137, 255); 
+    width: 28%; 
+    position: absolute; 
+    transform: translate(235%, 5%); 
+    border-radius: 15px;
+    padding: 10px;
+}
+.p-central{
+  text-align: center; 
+  background-color:rgb(200, 137, 255); 
+  width: 45%; 
+  position: absolute; 
+  left: 25%; 
+  padding: 3px; 
+  border: 1px solid white;
+}
+.barra-menu{
+  color: white;
+}
+.p-container{
+  font-size: small;
+}
+.section{
+  width: 60%;
+}
+.serviço{
+  width: 55%;
+  height: 45%;
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  background-color: white;
+  border: 3px solid  rgb(200, 137, 255);
+  border-collapse: collapse;
+}
+.p-serviço{
+  padding: 3px;
+  width: 40%;
+  background-color: rgb(200, 137, 255);
+}
+.caixa-serviço{
+  width: 50%;
+}
+label{
+  color: white;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main{
+  background-color:rgb(200, 137, 255);
+  width: 50%; 
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 15px;
+  position: relative;
+  left: 25%;
+}
+.subtitulo-contato{
+  position: absolute; 
+  left: 40%; 
+  top: 7%;
+}
+.label-descrição{
+  position: absolute; 
+  left: 50%; 
+  top: 3%;
+}
+  

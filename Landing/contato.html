@@ -6,42 +6,26 @@
     <title>Contato</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./Imagens/favicon-telefone.png" type="image/x-icon">
-    <style>
-        label{
-            color: white;
-            font-size: medium;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        main{
-            background-color:rgb(200, 137, 255);
-            width: 50%; 
-            border: 2px solid white;
-            border-radius: 15px;
-            padding: 15px;
-            position: relative;
-            left: 25%;
-        }
-
-    </style>
 </head>
 <body>
-    
+
     <h1>Contato</h1>
-    <table>
+
+    <table class="links">
         <tbody>
             <tr>
                 <th>
-                    <a href="./home.html" target="_self" rel="next">Home</a>
+                    <a href="./index.html" target="_self" rel="next">Home</a>
                 </th>
-                <th style="color: white;"> | </th>
+                <th class="barra-menu"> | </th>
                 <th>
                     <a href="./curriculo.html" target="_self" rel="next">Currículo</a>
                 </th>
-                <th style="color: white;"> | </th>
+                <th class="barra-menu"> | </th>
                 <th>
                     <a href="https://github.com/taina-uvv" target="_blank">GitHub</a>
                 </th>
-                <th style="color: white;"> | </th>
+                <th class="barra-menu"> | </th>
                 <th>
                     <a href="./serviços.html" target="_self" rel="next">Serviços</a>
                 </th>
@@ -49,7 +33,7 @@
         </tbody>
     </table>
 
-    <h2 style="position: absolute; left: 40%; top: 7%;">Formulário de contato</h2><br>
+    <h2 class="subtitulo-contato">Formulário de contato</h2><br>
     <main>
         <form action="/enviar" method="post">
             <label for="nome">Nome:</label>
@@ -110,13 +94,12 @@
       <option value="3-5">3-5 páginas</option>
       <option value="+5">+5 páginas</option>
     </select><br><br>
-    <form action="/enviar" method="post" style="position: absolute; left: 50%; top: 3%;">
+    <form action="/enviar" method="post" class="label-descrição">
     <label for="descricao">Descrição do serviço a ser contratado:</label><br>
 <textarea id="descricao" name="descricao" rows="6" cols="40" placeholder="Escreva aqui..."></textarea><br><br>
 </form>
-
-    <input type="submit" value="Enviar">
-  </form>
+<input type="submit" value="Enviar">
+</form>
 </main>
 </body>
 </html>
