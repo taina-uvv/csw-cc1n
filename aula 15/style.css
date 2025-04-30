@@ -1,0 +1,34 @@
+.simples{
+    background-color: aliceblue;
+    text-align: center;
+    border: 1px solid black;
+}
+.tratada{
+    display: inline-block;
+    background-color: aliceblue;
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    
+}
+.tratada:hover, .simples:hover{
+    background-color: yellow;
+}
+
+.container {
+    background-color: aliceblue;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+  }
+.texto-hover{
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+.container:hover .texto-hover {
+    visibility: visible;
+  }
