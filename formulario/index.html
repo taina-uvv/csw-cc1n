@@ -1,58 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Formulário</h1>
+        <h2>Formulário</h2>
     </header>
     <main>
-        <form action="">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome"><br><br>
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" placeholder="seuemail@email.com"><br><br>
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha"><br><br>
-            <input type="checkbox" name="opcao1"> Opção 1
-            <br>
-            <input type="checkbox" name="opcao2"> Opção 2
-            <br>
-            <input type="checkbox" name="opcao3"> Opção 3
-            <br><br>
-            Opção 1<input type="radio" name="opcao1" value="opcao1">
-            <br>
-            Opção 2<input type="radio" name="opcao1" value="opcao2">
-            <br>
-            Opção 3<input type="radio" name="opcao1" value="opcao3">
-            <br>
-            <br>
-            <label for="">Esporte favorito:</label>
-            <select name="Esporte" id="Esporte">
-                <option value="">Selecione um esporte:</option>
-                <option value="basquete">Basquete</option>
-                <option value="futebol">Futebol</option>
-                <option value="volei">Volêi</option>
-                <option value="natacao">Natação</option>
-            </select><br><br>
-            <label for="idade">Idade:</label>
-            <input type="text" name="idade" id="idade"><br><br>
-            <label for="email">Email(patter):</label>
-            <input type="text" name="email" id="email" placeholder="seuemail@email.com"><br><br>
-            <label for="cor">Escolha uma cor:</label>
+        <div id="dp" class="section">
+            <h1>Dados pessoais</h1>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" size="45%"><br><br>
+            <label for="idade">Idade:</label><br>
+            <input type="text" name="idade" id="idade" size="45%"><br><br>
+            <label for="email">Email(patter):</label><br>
+            <input type="text" name="email" id="email" placeholder="seuemail@email.com" size="45%"><br><br>
+            <label for="cor">Escolha uma cor:</label><br>
             <input type="color" name="cor" id="cor"><br><br>
-            <input type="submit" value="Clique aqui"><br><br>
-            <label for="date">Data e Hora:</label>
-            <input type="datetime-local" name="dtlocal" id="dtlocal"><br><br>
-            <label for="arquivo">Selecione um arquivo:</label>
+            <label for="date">Data e Hora:</label><br>
+            <input type="datetime-local" name="dtlocal" id="dtlocal" size="45%"><br><br>
+            <label for="arquivo">Selecione um arquivo:</label><br>
             <input type="file" id="arquivo" name="arquivo"><br><br>
-            <input type="submit" value="Enviar"><br><br>
+        </div>
 
-        </form>
-    </main>
+        <div id="login">
+
+            <div  class="section2">
+                <h1>Login</h1>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="seuemail@email.com" size="45%"><br><br>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" size="45%"><br><br>
+            </div>
+
+            <div  class="section3">
+                Opção 1<input type="radio" name="opcao1" value="opcao1">
+                <br>
+                Opção 2<input type="radio" name="opcao1" value="opcao2">
+                <br>
+                Opção 3<input type="radio" name="opcao1" value="opcao3">
+            </div>
+
+            <div  class="section3">
+                <input type="checkbox" name="opcao1"> Opção 1
+                <br>
+                <input type="checkbox" name="opcao2"> Opção 2
+                <br>
+                <input type="checkbox" name="opcao3"> Opção 3
+            </div>
+        </div>
+        
+        <div id="texto">
+        <div class="section4">
+            <label for="texto">Deixe um comentário:</label><br>
+            <textarea name="descrição" id="descrição"></textarea>
+        </div>
+        <div class="section5">
+        <label for="">Esporte favorito:</label>
+        <select name="Esporte" id="Esporte">
+            <option value="">Selecione um esporte:</option>
+            <option value="basquete">Basquete</option>
+            <option value="futebol">Futebol</option>
+            <option value="volei">Volêi</option>
+            <option value="natacao">Natação</option>
+        </select><br><br>
+        </div>
+        </div>
+</main>
+<footer>
+    <div class="clique">
+    <input type="submit" value="Clique aqui"><br><br>
+    </div>
+    <div class="enviar">
+    <input type="submit" value="Enviar"><br><br>
+    </div>
+</footer>
 </body>
+
 </html>

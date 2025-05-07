@@ -1,0 +1,48 @@
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section{
+    border: 2px solid black;
+    width: 20%;
+    border-radius: 3%;
+}
+h1{
+    text-align: center;
+}
+input{
+    margin-left: 2%;
+}
+label
+{
+    margin-left: 2%;
+}
+.section2{
+    border: 2px solid black;
+    border-radius: 3%;
+}
+.section3{
+    border: 2px solid black;
+    width: 20%;
+    border-radius: 5%;
+    padding: 1%;
+}
+.section4{
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 1%;
+}
+.section5{
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
