@@ -11,17 +11,17 @@
     window.alert("Olá, mundo!");
 </script>
 <hr>
-<h1>Esse é meu primeiro código JavaScript</h1>
+<h1 id="resposta2">Esse é meu primeiro código JavaScript</h1>
 <br><br><hr>
 <h1 id="resposta">Esse é meu segundo código JavaScript</h1>
 <script type="text/JavaScript">
     document.write("<h2> Olá, mundo!</h2>");
 </script>
 <br>
-<div id="resposta1"></div>
 <script type="text/JavaScript">
     document.getElementById("resposta").innerHTML = "Resposta de saída: Esse é meu novo segundo código javascript"
-    window.confirm("Você está gostando do curso?");
+    document.getElementById("resposta2").innerHTML = window.confirm("Você está gostando do curso?");
+    
 </script>
 </body>
 </html>
