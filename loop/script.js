@@ -1,0 +1,7 @@
+function calcularIdade(){
+
+}
+function calcularOperador(){
+
+    
+}
