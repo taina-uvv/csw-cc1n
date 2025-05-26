@@ -26,16 +26,25 @@
     <input type="number" name="ano" id="ano"><br><br>
     <button onclick="calcularIdade()">Calcula Idade</button>
     <div class="idade"></div><br><br>
-    <script src="./script.js"></script>
 
     <input type="number" name="number" id="number1">
-    <input type="number" name="number" id="number2"><br><br>
     <select name="operador" id="operador">
-        <option value="">Selecione um operador</option>
-        <option value="+">Adição</option>
-        <option value="-">Subtração</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="x">x</option>
     </select>
+    <input type="number" name="number" id="number2"><br><br>
     <button onclick="calcularOperador()">Calcula</button>
+
+    <div>
+    <label onmouseover="calcularOperador()"></label>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
 
 </body>
 </html>
