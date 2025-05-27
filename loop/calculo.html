@@ -6,8 +6,9 @@
     <title>calculo</title>
 </head>
 <body>
+    
     <label for="nascimento">Data de nascimento: </label>
-    <input type="number" name="dia" id="dia">
+    <input type="number" name="dia" id="dia" max="31">
     <select type="text" id="mes" name="mes">
         <option value="">Selecione um mês</option>
         <option value="1">Janeiro</option>
@@ -25,24 +26,25 @@
     </select>
     <input type="number" name="ano" id="ano"><br><br>
     <button onclick="calcularIdade()">Calcula Idade</button>
-    <div class="idade"></div><br><br>
+    <label onmouseover="calcularIdade()" id="resultado">Idade</label><br><br>
 
-    <input type="number" name="number" id="number1">
+
+
+
+
+    <input type="number" name="" id="number1">
     <select name="operador" id="operador">
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="/">/</option>
-        <option value="x">x</option>
+        <option value="*">*</option>
     </select>
-    <input type="number" name="number" id="number2"><br><br>
+    <input type="number" name="" id="number2"><br><br>
     <button onclick="calcularOperador()">Calcula</button>
 
     <div>
-    <label onmouseover="calcularOperador()"></label>
+    <label onmouseover="calcularOperador()" id="resultadocalc"></label>
     </div>
-
-
-
 
     <script src="./script.js"></script>
 
