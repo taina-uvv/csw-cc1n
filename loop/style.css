@@ -1,0 +1,16 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 50px;
+}
+.nascimento{
+    background-color: beige;
+    border: 1px solid black;
+    padding: 5%;
+}
+.operador{
+    background-color: beige;
+    border: 1px solid black;
+    padding: 5%;
+}

@@ -1,21 +1,18 @@
 function calcularIdade(){
+
         var hoje = new Date()
-
         let result = document.getElementById("resultado")
-
-        dia = document.getElementById("dia").value
-        mes = document.getElementById("mes").value
-        ano = document.getElementById("ano").value
+        let dia = document.getElementById("dia").value
+        let mes = document.getElementById("mes").value
+        let ano = document.getElementById("ano").value
 
         if (dia <= 0 || dia > 31 || ano <= 0) {
             alert("Digite uma data de nascimento valida")
             return
         }
 
-        nascimento = new Date(ano + "/" + mes + "/" + dia);
-
+        let nascimento = new Date(ano + "/" + mes + "/" + dia);
         var idade = hoje.getFullYear() - nascimento.getFullYear()
-
         let dth = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate())
         let dth2 = new Date(hoje.getFullYear(), nascimento.getMonth(), nascimento.getDate())
 
@@ -40,7 +37,7 @@ function calcularOperador(){
         case '-':
             resultadocalc = numero1 - numero2;
             break;
-        case 'x':
+        case '*':
             resultadocalc = numero1 * numero2;
             break;
         case '/':
