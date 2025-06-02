@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form id="formulario" action="">
+            <label for="nome">Nome: </label><br><br>
+            <input type="text" name="nome" id="nome1"><br><br>
+
+            <label for="data">Data de Nascimento: </label><br><br>
+            <input type="date" name="" id="nascimento1"><br><br>
+
+            <label for="telefone">Telefone: </label><br><br>
+            <input type="number" name="telefone" id="telefone1" placeholder="Apenas números"><br><br>
+
+            <label for="turma">Turma: </label><br><br>
+            <select name="turma" id="turma1">
+                <option value="">Selecione...</option>
+                <option value="A">Turma A</option>
+                <option value="B">Turma B</option>
+            </select><br><br>
+        </form>
+
+        <button onclick="cadastrar()">Cadastrar Aluno</button>
+        <br>
+        <table border="1" id="tabela">
+            <thead>
+                <tr id="dados">
+                    <th id="nome">Nome</th>
+                    <th id="data">Data de Nascimento</th>
+                    <th id="telefone">Telefone</th>
+                    <th id="turma">Turma</th>
+                </tr>
+            </thead>
+        </table>
+    </main>
+
+    <script src="./scripy.js"></script>
+</body>
+</html>

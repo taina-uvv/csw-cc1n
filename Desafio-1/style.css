@@ -1,0 +1,17 @@
+main{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+#nome1{
+    width: 100%;
+}
+#nascimento1{
+    width: 100%;
+}
+#telefone1{
+    width: 100%;
+}
+#turma1{
+    width: 100%;
+}
